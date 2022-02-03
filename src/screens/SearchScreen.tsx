@@ -13,7 +13,6 @@ export const SearchScreen = ()=> {
 
     const getData = (data:any)=>{
         setImage(data)
-        console.log(image);
         
     }
 
@@ -39,6 +38,9 @@ export const SearchScreen = ()=> {
                                 <View style={{flexDirection:'row',alignItems:'center',marginRight:10,padding:5}}>
                                     <Image source={image.image} style={{ width:40,height:40,borderRadius:100}}/>
                                     <Text>Anonimo</Text>
+                                </View>
+                                <View>
+                                    <Image source={ image.image} style={{width:'100%',resizeMode:'cover'}} />
                                 </View>
                             </View>
                         </View>
